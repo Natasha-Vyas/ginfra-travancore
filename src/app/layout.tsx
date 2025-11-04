@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollAnimations from "@/components/ScrollAnimations";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +20,11 @@ export const metadata: Metadata = {
   description: "GInfra Travancore specializes in high-precision manufacturing for defence, aerospace, and advanced robotics. We deliver mission-critical components with tight tolerances, short lead times, and full traceability.",
   keywords: "defence manufacturing, aerospace components, precision machining, artillery fuzes, CNC machining, electronics integration, quality assurance",
   authors: [{ name: "GInfra Travancore Pvt. Ltd." }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -35,6 +40,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <ScrollAnimations />
       </body>
     </html>
   );

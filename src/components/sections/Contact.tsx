@@ -49,7 +49,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-gray-300">business@gintra-travancore.com</div>
+                    <div className="text-gray-300">info@ginfratravancore.com</div>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -58,7 +58,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold">Phone</div>
-                    <div className="text-gray-300">+91 XXX XXX XXXX</div>
+                    <div className="text-gray-300">+91 XXX XXXX XXX</div>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -66,8 +66,17 @@ export default function Contact() {
                     <span className="text-xl">📍</span>
                   </div>
                   <div>
-                    <div className="font-semibold">Location</div>
-                    <div className="text-gray-300">Travancore, Kerala, India</div>
+                    <div className="font-semibold">Locations</div>
+                    <div className="text-gray-300 space-y-2">
+                      <div>
+                        <div className="font-medium">1. CHERLAPALLY</div>
+                        <div className="text-sm">HYDERABAD, TELANGANA, 500051</div>
+                      </div>
+                      <div>
+                        <div className="font-medium">2. EMC, MAHESHWARAM</div>
+                        <div className="text-sm">RANGAREDDY, TELANGANA, 501359</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -187,7 +196,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 cursor-pointer hover:cursor-pointer"
               >
                 Send Message
               </button>

@@ -18,7 +18,7 @@ export default function Hero() {
             <span className="text-2xl md:text-4xl font-medium text-gray-300 animate-fade-in-up delay-200">Pvt. Ltd.</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-300">
-            Specialized defense manufacturer for <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">High-Performance Ammunition Components</span> • <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">Cartridge Cases</span> • <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">Advanced Fusing Solutions</span>
+            Specialized defense manufacturer for <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">Ammunition Components</span> • <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">Cartridge Cases (23mm-155mm)</span> • <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">Mechanical Fuses</span> • <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">BMCS Modular Charges</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-500">
             <Link
