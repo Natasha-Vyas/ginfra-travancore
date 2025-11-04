@@ -28,10 +28,10 @@ export default function Contact() {
     <section className="py-16 lg:py-24 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent mb-6">
             Contact & Next Steps
           </h2>
-          <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-300 mx-auto mb-8 rounded-full"></div>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             For pilot trials, ToT discussions or procurement enquiries, contact our Business Development / Technical Team
           </p>
@@ -41,7 +41,7 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent mb-6">Get in Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
@@ -83,7 +83,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-gray-800 p-6 rounded-lg">
-              <h4 className="text-xl font-semibold mb-4">Inquiry Types</h4>
+              <h4 className="text-xl font-semibold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent mb-4">Inquiry Types</h4>
               <div className="space-y-3">
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
@@ -111,7 +111,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="bg-gray-800 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent mb-6">Send us a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>

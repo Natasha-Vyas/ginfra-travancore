@@ -55,10 +55,10 @@ export default function ProductionRoadmap() {
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">
             Staged Production Roadmap
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 mx-auto mb-8 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Our systematic approach covers the complete spectrum of ammunition components from small caliber autocannon rounds to large caliber artillery systems, ensuring comprehensive defense manufacturing capabilities.
           </p>
@@ -98,7 +98,7 @@ export default function ProductionRoadmap() {
         </div>
 
         <div className="mt-16 scroll-animate-scale">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-8 text-center">
             Future Turnkey Expansion
           </h3>
           <div className="grid md:grid-cols-2 gap-6">

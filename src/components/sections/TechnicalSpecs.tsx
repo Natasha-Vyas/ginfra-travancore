@@ -70,10 +70,10 @@ export default function TechnicalSpecs() {
     <section className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">
             Technical Specifications
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 mx-auto mb-8 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Detailed specifications for our complete range of ammunition components from 23mm autocannon rounds to 155mm artillery systems.
           </p>
@@ -117,7 +117,7 @@ export default function TechnicalSpecs() {
         <div className="min-h-[400px]">
           {activeTab === 'process' && (
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">
                 Manufacturing Process Flow (Ammunition Components)
               </h3>
               <div className="grid gap-4">
@@ -135,7 +135,7 @@ export default function TechnicalSpecs() {
 
           {activeTab === 'equipment' && (
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">
                 Specialized Manufacturing Equipment
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
@@ -160,7 +160,7 @@ export default function TechnicalSpecs() {
 
           {activeTab === 'quality' && (
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">
                 Technical Specifications & Standards
               </h3>
               <div className="space-y-6">
@@ -181,7 +181,7 @@ export default function TechnicalSpecs() {
 
         {/* Timeline Section */}
         <div className="mt-16 bg-blue-50 p-8 rounded-xl">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6 text-center">
             Estimated Timelines
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
