@@ -62,46 +62,46 @@ export default function Navbar() {
                   <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
                     <div className="py-1">
                       <Link
-                        href="/services#defence"
+                        href="/services/all"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium border-b border-gray-100"
+                        onClick={closeMenu}
+                      >
+                        All Services
+                      </Link>
+                      <Link
+                        href="/services/defence"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                         onClick={closeMenu}
                       >
-                        Ammunition Components
+                        Defence Components
                       </Link>
                       <Link
-                        href="/services#aerospace"
+                        href="/services/aerospace"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                         onClick={closeMenu}
                       >
                         Aerospace Components
                       </Link>
                       <Link
-                        href="/services#robotics"
+                        href="/services/robotics"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                         onClick={closeMenu}
                       >
                         Advanced Robotics
                       </Link>
                       <Link
-                        href="/services#precision"
+                        href="/services/precision"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                         onClick={closeMenu}
                       >
                         Precision Machining
                       </Link>
                       <Link
-                        href="/services#quality"
+                        href="/services/quality"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                         onClick={closeMenu}
                       >
                         Quality Assurance
-                      </Link>
-                      <Link
-                        href="/services#manufacturing"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                        onClick={closeMenu}
-                      >
-                        Manufacturing Capabilities
                       </Link>
                     </div>
                   </div>
@@ -173,46 +173,46 @@ export default function Navbar() {
                 {isServicesOpen && (
                   <div className="pl-6 space-y-1">
                     <Link
-                      href="/services#defence"
+                      href="/services/all"
+                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors font-medium"
+                      onClick={closeMenu}
+                    >
+                      All Services
+                    </Link>
+                    <Link
+                      href="/services/defence"
                       className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
                       onClick={closeMenu}
                     >
-                      Ammunition Components
+                      Defence Components
                     </Link>
                     <Link
-                      href="/services#aerospace"
+                      href="/services/aerospace"
                       className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
                       onClick={closeMenu}
                     >
                       Aerospace Components
                     </Link>
                     <Link
-                      href="/services#robotics"
+                      href="/services/robotics"
                       className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
                       onClick={closeMenu}
                     >
                       Advanced Robotics
                     </Link>
                     <Link
-                      href="/services#precision"
+                      href="/services/precision"
                       className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
                       onClick={closeMenu}
                     >
                       Precision Machining
                     </Link>
                     <Link
-                      href="/services#quality"
+                      href="/services/quality"
                       className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
                       onClick={closeMenu}
                     >
                       Quality Assurance
-                    </Link>
-                    <Link
-                      href="/services#manufacturing"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
-                    >
-                      Manufacturing Capabilities
                     </Link>
                   </div>
                 )}

@@ -17,9 +17,43 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "GInfra Travancore Pvt. Ltd. - Precision Manufacturing for Defence, Aerospace & Advanced Robotics",
-  description: "GInfra Travancore specializes in high-precision manufacturing for defence, aerospace, and advanced robotics. We deliver mission-critical components with tight tolerances, short lead times, and full traceability.",
-  keywords: "defence manufacturing, aerospace components, precision machining, artillery fuzes, CNC machining, electronics integration, quality assurance",
+  description: "GInfra Travancore specializes in high-precision manufacturing for defence, aerospace, and advanced robotics. Located in Cherlapally and EMC Maheshwaram, Telangana. We deliver mission-critical components with tight tolerances, short lead times, and full traceability.",
+  keywords: "defence manufacturing, aerospace components, precision machining, artillery fuzes, CNC machining, electronics integration, quality assurance, Cherlapally, Maheshwaram, Telangana, India",
   authors: [{ name: "GInfra Travancore Pvt. Ltd." }],
+  creator: "GInfra Travancore Pvt. Ltd.",
+  publisher: "GInfra Travancore Pvt. Ltd.",
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://ginfratravancore.com",
+    siteName: "GInfra Travancore Pvt. Ltd.",
+    title: "GInfra Travancore - Precision Manufacturing for Defence & Aerospace",
+    description: "Leading precision manufacturing company in Telangana, India. Specializing in defence, aerospace, and advanced robotics components with ISO 9001 and AS9100 certifications.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "GInfra Travancore - Precision Manufacturing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GInfra Travancore - Precision Manufacturing for Defence & Aerospace",
+    description: "Leading precision manufacturing company in Telangana, India. Specializing in defence, aerospace, and advanced robotics components.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://ginfratravancore.com",
+  },
+  other: {
+    "geo.region": "IN-TG",
+    "geo.placename": "Telangana, India",
+    "geo.position": "17.4569;78.3677",
+    "ICBM": "17.4569, 78.3677",
+  },
 };
 
 export const viewport = {
@@ -34,6 +68,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#1e40af" />
+        <meta name="msapplication-TileColor" content="#1e40af" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="canonical" href="https://ginfratravancore.com" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
