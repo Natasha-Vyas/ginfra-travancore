@@ -2,51 +2,53 @@ export default function ProductionRoadmap() {
   const stages = [
     {
       stage: "Stage 1",
-      title: "Electronic Point-Detonating Fuze",
-      description: "105 mm, 130 mm, 155 mm artillery calibres",
+      title: "Small Caliber Cartridge Cases",
+      description: "23mm and 30mm metallic cases for autocannons and anti-aircraft systems (GAU-8/A, MK44 Bushmaster)",
       timeline: "9-12 months",
       status: "active"
     },
     {
       stage: "Stage 2",
-      title: "Time & Proximity Fuze",
-      description: "For artillery calibres with advanced timing systems",
+      title: "Medium Caliber Systems",
+      description: "40mm cases for grenade launchers and naval CIWS (MK19, GMG, Bofors 40mm L/60, L/70)",
       timeline: "6-9 months",
       status: "planned"
     },
     {
       stage: "Stage 3",
-      title: "Proximity Fuze",
-      description: "81 mm & 120 mm mortars with proximity detection",
+      title: "Large Caliber Artillery",
+      description: "105mm and 155mm metallic and combustible cases for tank guns and howitzers (L7, M68, M777, PzH 2000)",
       timeline: "6-9 months",
       status: "planned"
     },
     {
       stage: "Stage 4",
-      title: "Pinaka Rocket Fuzes",
-      description: "Proximity & Point Detonating Fuze for Pinaka rockets",
+      title: "Tank Gun Ammunition",
+      description: "120mm and 125mm combustible cartridge cases for FSAPDS and HESH rounds (Leopard 2, M1A1, T-72, T-90)",
       timeline: "6-9 months",
       status: "planned"
     },
     {
       stage: "Stage 5",
-      title: "Reserve Batteries",
-      description: "Specialized batteries for artillery fuzes",
+      title: "Modular Charge Systems",
+      description: "BMCS M91/M92 modular propellant charges for 155mm artillery with scalable range control",
       timeline: "6-9 months",
       status: "planned"
     },
     {
       stage: "Stage 6",
-      title: "Electrical Components",
-      description: "Detonators & relays for fuzes and mortars",
+      title: "Mechanical Fuse Systems",
+      description: "Point-detonating, proximity/timed, and programmable airburst fuses for 23mm, 30mm, and 40mm ammunition",
       timeline: "6-9 months",
       status: "planned"
     }
   ]
 
   const futureExpansion = [
-    "Nitrocellulose production (10.8%–13.4% N)",
-    "Single / Double / Triple base propellant production lines"
+    "Advanced surface treatments and specialized coatings for extreme environmental conditions",
+    "Expanded caliber range including naval and aerospace applications",
+    "Next-generation programmable ammunition systems with electronic fuzing",
+    "Lightweight composite materials for enhanced ballistic performance"
   ]
 
   return (
@@ -58,7 +60,7 @@ export default function ProductionRoadmap() {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our systematic approach ensures risk mitigation and enables targeted Transfer of Technology (ToT) at each stage.
+            Our systematic approach covers the complete spectrum of ammunition components from small caliber autocannon rounds to large caliber artillery systems, ensuring comprehensive defense manufacturing capabilities.
           </p>
         </div>
 
@@ -111,7 +113,7 @@ export default function ProductionRoadmap() {
           </div>
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-500">
-              Timeline: 18–30+ months including regulatory clearances and environmental approvals
+              All products meet MIL-STD and NATO STANAG standards with full material traceability and combat-proven designs
             </p>
           </div>
         </div>

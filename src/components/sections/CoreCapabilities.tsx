@@ -1,33 +1,33 @@
 export default function CoreCapabilities() {
   const capabilities = [
     {
-      title: "Forging & Pressing",
-      description: "Hot/cold forging and pressing for structural casings and load-bearing parts",
+      title: "Cartridge Case Manufacturing",
+      description: "23mm to 155mm metallic and combustible cartridge cases for autocannons, tank guns, and artillery systems",
       icon: "🔨"
     },
     {
-      title: "Multi-axis CNC Machining",
-      description: "Precision turning/milling for tight tolerances and complex geometries",
+      title: "Advanced Material Processing",
+      description: "High-strength alloy steel, brass, aluminum alloys, and nitrocellulose-based composites with specialized coatings",
       icon: "⚙️"
     },
     {
-      title: "Controlled Assembly",
-      description: "Clean environment assembly for electronic fuzes and electromechanical subsystems",
+      title: "Modular Charge Systems",
+      description: "BMCS M91/M92 modular propellant charges for scalable range control and clean-burning performance",
       icon: "🔧"
     },
     {
-      title: "Electronics Integration",
-      description: "PCB assembly, wiring harnesses, sensors and potting solutions",
+      title: "Mechanical Fuse Systems",
+      description: "Point-detonating, proximity/timed, and programmable airburst fuses with multi-redundant safety features",
       icon: "💻"
     },
     {
-      title: "Comprehensive Testing",
-      description: "Functional, environmental, electrical, metrology, and NDE testing",
+      title: "Precision Manufacturing",
+      description: "CNC-machined geometry for exact tolerances, specialized surface treatments, and environmental durability",
       icon: "🔬"
     },
     {
-      title: "Traceability & QA",
-      description: "Complete lot control and defence compliance systems",
+      title: "Combat-Proven Standards",
+      description: "MIL-STD and NATO STANAG compliance with full material traceability and end-to-end quality assurance",
       icon: "📋"
     }
   ]
@@ -41,7 +41,7 @@ export default function CoreCapabilities() {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            End-to-end manufacturing capabilities from metallurgy to precision machining, electronics integration, assembly, and comprehensive testing.
+            Specialized defense manufacturing for high-performance ammunition components supporting air defense, armor defeat, fortification breach, naval point-defense, and indirect fire support missions.
           </p>
         </div>
 
@@ -65,16 +65,16 @@ export default function CoreCapabilities() {
           </h3>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
-              <h4 className="font-semibold text-blue-600 mb-2">End-to-End Capability</h4>
-              <p className="text-gray-600 text-sm">Metallurgy → Precision Machining → Electronics → Assembly → Testing</p>
+              <h4 className="font-semibold text-blue-600 mb-2">Multi-Platform Compatibility</h4>
+              <p className="text-gray-600 text-sm">GAU-8/A, M777, PzH 2000, Leopard 2, M1A1 Abrams, T-72, T-90, and naval CIWS systems</p>
             </div>
             <div>
-              <h4 className="font-semibold text-blue-600 mb-2">Modular Approach</h4>
-              <p className="text-gray-600 text-sm">Stage-wise implementation minimizes risk and enables targeted ToT per stage</p>
+              <h4 className="font-semibold text-blue-600 mb-2">Extreme Performance</h4>
+              <p className="text-gray-600 text-sm">Operating pressures up to 450 MPa, muzzle velocities 240-1,800 m/s, temperature range -40°C to +55°C</p>
             </div>
             <div>
-              <h4 className="font-semibold text-blue-600 mb-2">Mission-Critical Supply</h4>
-              <p className="text-gray-600 text-sm">Rapid qualification, defence certifications, and high-volume production</p>
+              <h4 className="font-semibold text-blue-600 mb-2">Extended Service Life</h4>
+              <p className="text-gray-600 text-sm">10-15+ years sealed storage life with corrosion protection and environmental hardening</p>
             </div>
           </div>
         </div>

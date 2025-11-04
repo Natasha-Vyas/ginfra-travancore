@@ -5,64 +5,64 @@ export default function TechnicalSpecs() {
   const [activeTab, setActiveTab] = useState('process')
 
   const processFlow = [
-    "Forging / Blank production — raw forging/pressing to produce housings and casings",
-    "Rough machining — rough turning/milling to remove flash and bring to near-net shape",
-    "Heat treatment & stress relief — metallurgical processing for mechanical properties",
-    "Finish CNC machining — multi-axis cell for critical tolerances, bores, threads and surfaces",
-    "Surface treatments & plating — corrosion protection and functional coatings",
-    "Electronics assembly — PCB population, sensor integration, battery insertion, harnessing",
-    "Controlled assembly — clean rooms / ESD-controlled areas for fuze assembly",
-    "Functional & environmental testing — electrical tests, arming/trigger tests, environmental cycling",
-    "Packing & traceability — serialization, lot coding, chain-of-custody documentation"
+    "Material Selection — High-strength alloy steel, brass, aluminum alloys, and nitrocellulose composites",
+    "CNC Precision Machining — Exact tolerances for wall thickness, extraction groove depth, and case length",
+    "Surface Treatment — Specialized coatings, friction welders, and corrosion-resistant treatments",
+    "Environmental Hardening — Waterproof lacquers, anti-fungal coatings, and anti-static treatments",
+    "Pressure Testing — Validation up to 450 MPa operating pressures for various calibers",
+    "Dimensional Inspection — CMM verification of critical dimensions and tolerances",
+    "Live-Fire Validation — Muzzle velocity testing from 240 m/s to 1,800 m/s depending on application",
+    "Environmental Testing — Performance validation from -40°C to +55°C operating temperatures",
+    "Quality Certification — MIL-STD and NATO STANAG compliance verification and documentation"
   ]
 
   const equipment = [
     {
-      category: "Forging/Pressing",
-      items: ["Hydraulic forging presses", "Trimming presses", "Induction heating systems"]
+      category: "Cartridge Case Production",
+      items: ["Multi-axis CNC turning centers", "Precision boring machines", "Case forming presses", "Extraction groove machining"]
     },
     {
-      category: "Heat Treatment",
-      items: ["Batch furnaces", "Quench tanks", "Tempering ovens", "Hardness testers"]
+      category: "Material Processing",
+      items: ["High-strength alloy steel processing", "Brass and aluminum forming", "Nitrocellulose composite handling", "Laminated cloth processing"]
     },
     {
-      category: "CNC Machining",
-      items: ["4/5-axis CNC turning centers", "Horizontal/vertical machining centers", "Bar feeders"]
+      category: "Surface Treatment",
+      items: ["Specialized coating systems", "Friction welding equipment", "Corrosion-resistant treatment baths", "Environmental sealing stations"]
     },
     {
-      category: "Metrology & NDE",
-      items: ["CMM (coordinate measuring machine)", "Optical comparators", "Ultrasonic flaw detectors", "Eddy current testers"]
+      category: "Testing & Validation",
+      items: ["High-pressure test chambers (up to 450 MPa)", "Ballistic testing facilities", "Environmental chambers (-40°C to +55°C)", "Muzzle velocity measurement systems"]
     },
     {
-      category: "Electronics",
-      items: ["SMT line", "Reflow oven", "Selective soldering", "Functional testers", "Conformal coat station"]
+      category: "Fuse Manufacturing",
+      items: ["Mechanical fuse assembly lines", "Safety & arming device production", "Detonator integration systems", "Multi-redundant safety testing"]
     },
     {
-      category: "Quality & IT",
-      items: ["MES / ERP integration", "Lot tracking printers", "Barcode/RFID readers", "QA lab instruments"]
+      category: "Quality Assurance",
+      items: ["MIL-STD compliance verification", "NATO STANAG certification systems", "Material traceability systems", "Combat-proven design validation"]
     }
   ]
 
   const qualityProtocols = [
     {
-      title: "Documentation",
-      description: "Work instructions, Inspection Plans (IQ, IP, FAI), Batch records and Material Certificates"
+      title: "Material Standards",
+      description: "High-strength alloy steel, hardened steel, brass, aluminum alloys, and specialized nitrocellulose composites meeting defense specifications"
     },
     {
-      title: "Controls",
-      description: "Inline statistical process control, SPC charts for key tolerances, first-piece and last-piece inspection"
+      title: "Performance Validation",
+      description: "Operating pressures 250-450 MPa, muzzle velocities 240-1,800 m/s, temperature range -40°C to +55°C, storage life 10-15+ years"
     },
     {
-      title: "Testing Regimen",
-      description: "Electrical verification test (EVT), environmental stress screening (ESS), functional acceptance tests per defence requirements"
+      title: "Platform Compatibility",
+      description: "GAU-8/A, MK44 Bushmaster, MK19, GMG, Bofors, L7, M68, M777, PzH 2000, Leopard 2, M1A1 Abrams, T-72, T-90 systems"
     },
     {
-      title: "Traceability",
-      description: "Serialization of parts & components, raw material lot traceability, configurable digital records for audits"
+      title: "Combat Applications",
+      description: "Air defense, armor defeat, fortification breach, naval point-defense, indirect fire support, and area suppression missions"
     },
     {
-      title: "Certifications",
-      description: "ISO 9001 / AS9100, sector specific defence certifications, STQC where applicable, RDSO/BSF support"
+      title: "Compliance Standards",
+      description: "MIL-STD and NATO STANAG compliant with full material traceability, end-to-end quality assurance, and combat-proven designs"
     }
   ]
 
@@ -75,7 +75,7 @@ export default function TechnicalSpecs() {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive technical details of our manufacturing processes, equipment, and quality assurance protocols.
+            Detailed specifications for our complete range of ammunition components from 23mm autocannon rounds to 155mm artillery systems.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function TechnicalSpecs() {
           {activeTab === 'process' && (
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                High-level Process Flow (Electronic Point-Detonating Fuze)
+                Manufacturing Process Flow (Ammunition Components)
               </h3>
               <div className="grid gap-4">
                 {processFlow.map((step, index) => (
@@ -136,7 +136,7 @@ export default function TechnicalSpecs() {
           {activeTab === 'equipment' && (
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Equipment List by Process
+                Specialized Manufacturing Equipment
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {equipment.map((category, index) => (
@@ -161,7 +161,7 @@ export default function TechnicalSpecs() {
           {activeTab === 'quality' && (
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Quality Assurance & Compliance Protocols
+                Technical Specifications & Standards
               </h3>
               <div className="space-y-6">
                 {qualityProtocols.map((protocol, index) => (
@@ -186,14 +186,14 @@ export default function TechnicalSpecs() {
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg">
-              <h4 className="font-semibold text-blue-600 mb-2">Stage 1 (Point-Detonating Fuze)</h4>
-              <p className="text-gray-600 text-sm">Design finalization → Equipment procurement → Line setup → Pilot qualification</p>
-              <div className="mt-2 font-bold text-gray-900">9–12 months</div>
+              <h4 className="font-semibold text-blue-600 mb-2">Small Caliber Systems (23mm-40mm)</h4>
+              <p className="text-gray-600 text-sm">Autocannon and anti-aircraft ammunition for rapid-fire applications</p>
+              <div className="mt-2 font-bold text-gray-900">Rates: 240-2,000+ RPM</div>
             </div>
             <div className="bg-white p-6 rounded-lg">
-              <h4 className="font-semibold text-blue-600 mb-2">Subsequent Stages</h4>
-              <p className="text-gray-600 text-sm">Line adaptation and qualification (overlapping possible once Stage 1 is stable)</p>
-              <div className="mt-2 font-bold text-gray-900">6–9 months per stage</div>
+              <h4 className="font-semibold text-blue-600 mb-2">Large Caliber Systems (105mm-155mm)</h4>
+              <p className="text-gray-600 text-sm">Tank gun and artillery ammunition for long-range precision strikes</p>
+              <div className="mt-2 font-bold text-gray-900">Range: 40+ km</div>
             </div>
           </div>
         </div>

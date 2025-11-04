@@ -71,17 +71,16 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              © 2024 GInfra Travancore Pvt. Ltd. All rights reserved.
+              © 2025 GInfra Travancore Pvt. Ltd. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-blue-400 transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-blue-400 transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-blue-400 transition-colors">
-                Quality Policy
+              <a
+                href="https://www.tryantler.com/home"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors"
+              >
+                Powered by Antler Technologies
               </a>
             </div>
           </div>

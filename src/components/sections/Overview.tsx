@@ -12,10 +12,10 @@ export default function Overview() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              GInfra Travancore is building a modern, secure manufacturing facility dedicated to high-precision components and weapon-system subsystems.
+              We are a specialized defense manufacturer dedicated to the design, engineering, and production of high-performance ammunition components for land, sea, and air platforms. Our product portfolio includes metallic and combustible cartridge cases, modular charge systems, and advanced fusing solutions, all built to meet the stringent demands of modern combat operations.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Our platform delivers <span className="font-semibold text-blue-600">mission-critical parts</span> with tight tolerances, short lead times and full traceability — initially focused on artillery munitions and fuze systems, with a roadmap to aerospace and robotics components.
+              Our manufacturing capabilities integrate <span className="font-semibold text-blue-600">CNC precision machining</span>, advanced material processing, and controlled-environment assembly lines, ensuring every component meets or exceeds <span className="font-semibold text-blue-600">MIL-STD and NATO STANAG standards</span>. With an in-house R&D team, we continuously innovate in the areas of lightweight materials, improved ballistics, and enhanced safety mechanisms.
             </p>
           </div>
           
