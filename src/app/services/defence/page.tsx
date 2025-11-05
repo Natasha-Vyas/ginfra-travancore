@@ -158,6 +158,9 @@ export default function DefenceComponents() {
       <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              Defense Standards
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">Technical Specifications</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Detailed specifications for our complete range of ammunition components
@@ -166,7 +169,12 @@ export default function DefenceComponents() {
 
           {/* Cartridge Cases Specifications */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-8 text-center">Cartridge Cases Specifications</h3>
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+                Component Details
+              </div>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Cartridge Cases Specifications</h3>
+            </div>
             <div className="overflow-x-auto">
               <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
                 <thead className="bg-blue-600 text-white">

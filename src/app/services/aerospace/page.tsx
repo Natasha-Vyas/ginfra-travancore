@@ -170,6 +170,9 @@ export default function AerospaceComponents() {
       <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              Materials & Capabilities
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">Materials & Capabilities</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Advanced materials processing and manufacturing capabilities for aerospace applications
@@ -239,6 +242,9 @@ export default function AerospaceComponents() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              Testing & Validation
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">Testing & Validation</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Comprehensive testing protocols to ensure aerospace component reliability and safety
