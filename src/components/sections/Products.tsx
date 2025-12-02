@@ -14,8 +14,8 @@ export default function Products() {
           </p>
         </div>
         
-        <div className="flex justify-center gap-8">
-          <Link href="/products/fuzes" className="group w-80">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <Link href="/products/fuzes" className="group">
             <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
               <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,7 +27,7 @@ export default function Products() {
             </div>
           </Link>
 
-          <Link href="/products/cartridge-cases" className="group w-80">
+          <Link href="/products/cartridge-cases" className="group">
             <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,7 +39,7 @@ export default function Products() {
             </div>
           </Link>
 
-          <Link href="/products/pcbs" className="group w-80">
+          <Link href="/products/pcbs" className="group">
             <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

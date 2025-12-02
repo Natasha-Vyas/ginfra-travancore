@@ -14,10 +14,8 @@ export default function Services() {
           </p>
         </div>
         
-        <div className="flex flex-col gap-8">
-          {/* First Row - 3 Services */}
-          <div className="flex flex-wrap justify-center gap-8">
-            <Link href="/services/defence" className="group w-80">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Link href="/services/defence" className="group">
               <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -29,7 +27,7 @@ export default function Services() {
               </div>
             </Link>
 
-            <Link href="/services/aerospace" className="group w-80">
+            <Link href="/services/aerospace" className="group">
               <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,7 +39,7 @@ export default function Services() {
               </div>
             </Link>
 
-            <Link href="/services/robotics" className="group w-80">
+            <Link href="/services/robotics" className="group">
               <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,11 +51,7 @@ export default function Services() {
                 <div className="text-gray-700 text-sm group-hover:text-gray-800 transition-colors duration-300">Intelligent automation and robotic systems</div>
               </div>
             </Link>
-          </div>
-
-          {/* Second Row - 2 Services Centered */}
-          <div className="flex justify-center gap-8">
-            <Link href="/services/precision" className="group w-80">
+            <Link href="/services/precision" className="group">
               <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,7 +63,7 @@ export default function Services() {
               </div>
             </Link>
 
-            <Link href="/services/quality" className="group w-80">
+            <Link href="/services/quality" className="group">
               <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 cursor-pointer h-48 flex flex-col justify-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,7 +74,6 @@ export default function Services() {
                 <div className="text-gray-700 text-sm group-hover:text-gray-800 transition-colors duration-300">Comprehensive testing and quality control</div>
               </div>
             </Link>
-          </div>
         </div>
       </div>
     </section>
