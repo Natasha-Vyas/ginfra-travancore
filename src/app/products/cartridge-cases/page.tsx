@@ -180,7 +180,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/72950692-38eb-4123-a177-c7ae7d8722df_125mm_APFSDS_shell_of_T-72_Tank.jpg"
                   alt="125mm APFSDS Shell for T-72 Tank"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -194,7 +194,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6d9cf34b-b9c2-4226-8090-355c051b33fa_165-HEIT.webp"
                   alt="165mm HEIT Cartridge"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -208,7 +208,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/72180194-8ca1-4dbe-9d97-2606e85e4efd_Ammo_23mm_cannon%20%281%29.jpg"
                   alt="23mm Cannon Ammunition"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -222,7 +222,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ead651b0-562b-45b1-a675-fda1bf0f37bc_e44fa198-b23f-4625-9032-51d0a78dfd1b.jpg"
                   alt="Artillery Shell Components"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -236,7 +236,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/918f0621-5a5a-4114-a987-d6d287435c94_n5cXPeossV05XNZLyxYcdoFAV0m2HTObq1bSSrz8HjO0vZPbbjIwoMC222XKRBTnLuNixNXcvxnTIkuUcCGKRS6iuCDAxcNF8RuxoFBAMKpdJF9GcLASqqFGD_CbzRPE8fqWVcu35U_h8QZxDI4UbA.jpg"
                   alt="Large Caliber Ammunition"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -250,7 +250,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0eecae55-3d85-4051-911e-a0fac0d1384a_NGAC.png"
                   alt="NGAC Cartridge System"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -264,7 +264,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3b187acd-c9ea-4cce-b827-34c918cdb339_original.jpg"
                   alt="Precision Cartridge Manufacturing"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -278,7 +278,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/def47e2d-7965-4fde-8a71-3a78c967db6f_M107_M795_M483A1.jpg"
                   alt="M107 M795 M483A1 Artillery Shells"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
@@ -292,7 +292,7 @@ export default function CartridgeCasesPage() {
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6b9a1627-498d-43d7-a671-00e457e0a024_MK53_fuze.jpg"
                   alt="MK53 Fuze System"
-                  className="w-full h-auto md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
+                  className="w-full h-[35vh] md:h-64 object-contain group-hover:scale-105 transition-transform duration-300 bg-transparent"
                 />
               </div>
               <div className="p-6">
