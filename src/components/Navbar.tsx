@@ -29,23 +29,35 @@ export default function Navbar() {
     setIsProductsOpen(false)
   }
 
-  // Close dropdowns when clicking outside
+  // Handle mobile link clicks
+  const handleMobileLinkClick = (href: string) => {
+    closeMenu()
+    // Force navigation on mobile
+    window.location.href = href
+  }
+
+  // Close dropdowns when clicking outside (desktop only)
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target as Node)) {
-        setIsServicesOpen(false)
-      }
-      if (productsDropdownRef.current && !productsDropdownRef.current.contains(event.target as Node)) {
-        setIsProductsOpen(false)
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      // Only apply outside click logic on desktop
+      if (window.innerWidth >= 768) {
+        if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target as Node)) {
+          setIsServicesOpen(false)
+        }
+        if (productsDropdownRef.current && !productsDropdownRef.current.contains(event.target as Node)) {
+          setIsProductsOpen(false)
+        }
       }
     }
 
     if (isServicesOpen || isProductsOpen) {
       document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('touchstart', handleClickOutside)
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('touchstart', handleClickOutside)
     }
   }, [isServicesOpen, isProductsOpen])
 
@@ -218,8 +230,8 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <div className="md:hidden fixed inset-x-0 top-24 z-[9999] bg-white border-t shadow-lg">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
               <Link
                 href="/"
                 className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors"
@@ -254,28 +266,49 @@ export default function Navbar() {
                 </button>
                 
                 {isProductsOpen && (
-                  <div className="pl-6 space-y-1">
-                    <Link
+                  <div className="pl-6 space-y-1 bg-gray-50 rounded-md mx-3 py-2 relative z-[10000]">
+                    <a
                       href="/products/fuzes"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/products/fuzes')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/products/fuzes')
+                      }}
                     >
                       Fuzes
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="/products/cartridge-cases"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/products/cartridge-cases')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/products/cartridge-cases')
+                      }}
                     >
                       Cartridge Cases
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="/products/pcbs"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/products/pcbs')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/products/pcbs')
+                      }}
                     >
                       PCBs
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
@@ -298,42 +331,77 @@ export default function Navbar() {
                 </button>
                 
                 {isServicesOpen && (
-                  <div className="pl-6 space-y-1">
-                    <Link
+                  <div className="pl-6 space-y-1 bg-gray-50 rounded-md mx-3 py-2 relative z-[10000]">
+                    <a
                       href="/services/defence"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/defence')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/defence')
+                      }}
                     >
                       Defence Components
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="/services/aerospace"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/aerospace')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/aerospace')
+                      }}
                     >
                       Aerospace Components
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="/services/robotics"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/robotics')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/robotics')
+                      }}
                     >
                       Advanced Robotics
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="/services/precision"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/precision')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/precision')
+                      }}
                     >
                       Precision Machining
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="/services/quality"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
+                      className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-sm transition-colors rounded-md cursor-pointer touch-manipulation"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/quality')
+                      }}
+                      onTouchEnd={(e) => {
+                        e.preventDefault()
+                        handleMobileLinkClick('/services/quality')
+                      }}
                     >
                       Quality Assurance
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
