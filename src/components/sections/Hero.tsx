@@ -42,9 +42,9 @@ export default function Hero() {
             <div className="max-w-5xl mx-auto mb-8 animate-fade-in-up delay-300">
               <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-4">
                 GInfra Travancore Pvt. Ltd. stands at the forefront of India's defense manufacturing evolution — delivering
-                <span className="text-blue-400 font-bold"> electronic fuze systems</span>,
-                <span className="text-cyan-400 font-bold"> artillery components</span>, and
-                <span className="text-purple-400 font-bold"> high-precision assemblies</span>.
+                <span className="text-blue-400 font-bold"> advanced fuzes</span>,
+                <span className="text-cyan-400 font-bold"> cartridge cases</span>, and
+                <span className="text-purple-400 font-bold"> defense-grade PCBs</span>.
               </p>
               <p className="text-base md:text-lg text-gray-300 leading-relaxed">
                 With cutting-edge CNC machining, forging, and electronic integration facilities, our plant ensures mission-ready quality, defense-grade reliability, and rapid delivery cycles trusted by armed forces and OEMs alike.
@@ -53,18 +53,15 @@ export default function Hero() {
             
             {/* Enhanced capabilities badges with better styling */}
             <div className="flex flex-wrap gap-3 justify-center mb-8 animate-fade-in-up delay-400">
-              <span className="px-5 py-2 bg-gradient-to-r from-blue-600/30 to-blue-500/20 border-2 border-blue-400/40 rounded-2xl text-blue-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-blue-500/40 hover:shadow-2xl hover:from-blue-600/50 hover:to-blue-500/30 hover:border-blue-400/60 hover:text-blue-200 transition-all duration-300 hover:scale-105 cursor-pointer">
-                Electronic Fuze Systems
-              </span>
-              <Link href="/services/cartridge-cases" className="px-5 py-2 bg-gradient-to-r from-orange-600/30 to-orange-500/20 border-2 border-orange-400/40 rounded-2xl text-orange-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-orange-500/40 hover:shadow-2xl hover:from-orange-600/50 hover:to-orange-500/30 hover:border-orange-400/60 hover:text-orange-200 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <Link href="/products/fuzes" className="px-5 py-2 bg-gradient-to-r from-blue-600/30 to-blue-500/20 border-2 border-blue-400/40 rounded-2xl text-blue-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-blue-500/40 hover:shadow-2xl hover:from-blue-600/50 hover:to-blue-500/30 hover:border-blue-400/60 hover:text-blue-200 transition-all duration-300 hover:scale-105 cursor-pointer">
+                Fuzes
+              </Link>
+              <Link href="/products/cartridge-cases" className="px-5 py-2 bg-gradient-to-r from-orange-600/30 to-orange-500/20 border-2 border-orange-400/40 rounded-2xl text-orange-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-orange-500/40 hover:shadow-2xl hover:from-orange-600/50 hover:to-orange-500/30 hover:border-orange-400/60 hover:text-orange-200 transition-all duration-300 hover:scale-105 cursor-pointer">
                 Cartridge Cases
               </Link>
-              <span className="px-5 py-2 bg-gradient-to-r from-cyan-600/30 to-cyan-500/20 border-2 border-cyan-400/40 rounded-2xl text-cyan-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-cyan-500/40 hover:shadow-2xl hover:from-cyan-600/50 hover:to-cyan-500/30 hover:border-cyan-400/60 hover:text-cyan-200 transition-all duration-300 hover:scale-105 cursor-pointer">
-                Artillery Components
-              </span>
-              <span className="px-5 py-2 bg-gradient-to-r from-purple-600/30 to-purple-500/20 border-2 border-purple-400/40 rounded-2xl text-purple-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-purple-500/40 hover:shadow-2xl hover:from-purple-600/50 hover:to-purple-500/30 hover:border-purple-400/60 hover:text-purple-200 transition-all duration-300 hover:scale-105 cursor-pointer">
-                High-Precision Assemblies
-              </span>
+              <Link href="/products/pcbs" className="px-5 py-2 bg-gradient-to-r from-cyan-600/30 to-cyan-500/20 border-2 border-cyan-400/40 rounded-2xl text-cyan-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-cyan-500/40 hover:shadow-2xl hover:from-cyan-600/50 hover:to-cyan-500/30 hover:border-cyan-400/60 hover:text-cyan-200 transition-all duration-300 hover:scale-105 cursor-pointer">
+                PCBs
+              </Link>
             </div>
             
             {/* Enhanced CTA buttons */}

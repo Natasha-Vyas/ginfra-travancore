@@ -45,18 +45,23 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Products</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <Link href="/services/fuzes" className="hover:text-blue-400 transition-colors">
+                <Link href="/products/fuzes" className="hover:text-blue-400 transition-colors">
                   Fuzes
                 </Link>
               </li>
               <li>
-                <Link href="/services/cartridge-cases" className="hover:text-blue-400 transition-colors">
+                <Link href="/products/cartridge-cases" className="hover:text-blue-400 transition-colors">
                   Cartridge Cases
                 </Link>
               </li>
               <li>
-                <Link href="/services/aerospace" className="hover:text-blue-400 transition-colors">
+                <Link href="/products/pcbs" className="hover:text-blue-400 transition-colors">
                   PCBs
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/all" className="hover:text-blue-400 transition-colors">
+                  All Products
                 </Link>
               </li>
             </ul>

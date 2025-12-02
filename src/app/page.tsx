@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero'
+import Products from '@/components/sections/Products'
 import About from '@/components/sections/About'
 import CoreValues from '@/components/sections/CoreValues'
 import Services from '@/components/sections/Services'
@@ -29,6 +30,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Hero />
+      <Products />
       <About />
       <Services />
       <WhyChooseUs />
