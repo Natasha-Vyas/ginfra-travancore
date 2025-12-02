@@ -102,6 +102,13 @@ export default function Navbar() {
                         Defence Components
                       </Link>
                       <Link
+                        href="/services/cartridge-cases"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                        onClick={closeMenu}
+                      >
+                        Cartridge Cases
+                      </Link>
+                      <Link
                         href="/services/aerospace"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                         onClick={closeMenu}
@@ -205,6 +212,13 @@ export default function Navbar() {
                       onClick={closeMenu}
                     >
                       Defence Components
+                    </Link>
+                    <Link
+                      href="/services/cartridge-cases"
+                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
+                      onClick={closeMenu}
+                    >
+                      Cartridge Cases
                     </Link>
                     <Link
                       href="/services/aerospace"

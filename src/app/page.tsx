@@ -12,11 +12,11 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: "Precision Defense & Aerospace Manufacturing | GInfra Travancore Pvt. Ltd.",
-  description: "GInfra Travancore delivers high-precision defense components and electronic fuze systems with advanced CNC machining, forging, and full QA traceability — supporting artillery, aerospace, and robotics sectors across India.",
-  keywords: "precision manufacturing, defence components, aerospace manufacturing, advanced robotics, CNC machining, artillery fuzes, electronics integration, ISO 9001, AS9100, Telangana, India",
+  description: "GInfra Travancore delivers high-precision fuzes, cartridge cases, PCBs, and defense components with advanced CNC machining, forging, and full QA traceability — supporting artillery, aerospace, and robotics sectors across India.",
+  keywords: "precision manufacturing, fuzes, cartridge cases, PCBs, defence components, aerospace manufacturing, advanced robotics, CNC machining, artillery fuzes, electronics integration, ISO 9001, AS9100, Telangana, India",
   openGraph: {
     title: "Precision Defense & Aerospace Manufacturing | GInfra Travancore Pvt. Ltd.",
-    description: "GInfra Travancore delivers high-precision defense components and electronic fuze systems with advanced CNC machining, forging, and full QA traceability — supporting artillery, aerospace, and robotics sectors across India.",
+    description: "GInfra Travancore delivers high-precision fuzes, cartridge cases, PCBs, and defense components with advanced CNC machining, forging, and full QA traceability — supporting artillery, aerospace, and robotics sectors across India.",
     url: "https://ginfratravancore.com",
     type: "website",
   },

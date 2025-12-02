@@ -119,24 +119,204 @@ export default function AllServices() {
                 </div>
               </div>
             </div>
-            <div className="bg-red-50 p-8 rounded-lg">
+            <div className="bg-blue-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Key Specifications</h3>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">450 MPa</div>
-                  <div className="text-sm text-gray-700">Max Operating Pressure</div>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Max Operating Pressure: 450 MPa</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">1,800 m/s</div>
-                  <div className="text-sm text-gray-700">Max Muzzle Velocity</div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Max Muzzle Velocity: 1,800 m/s</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">15+ Years</div>
-                  <div className="text-sm text-gray-700">Storage Life</div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Storage Life: 15+ years</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">NATO</div>
-                  <div className="text-sm text-gray-700">STANAG Compliant</div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">NATO STANAG Compliant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fuzes */}
+      <section id="fuzes" className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-blue-50 p-8 rounded-lg order-2 lg:order-1">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Fuze Specifications</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">CNC Precision Manufacturing</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Multi-Caliber Compatibility</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Extreme Battlefield Conditions</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">MIL-STD & NATO STANAG Compliant</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Proven Air-Defence & Naval Missions</span>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Fuze Systems</h2>
+              </div>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Precision-engineered mechanical fuze solutions for 23mm, 30mm, and 40mm ammunition systems. Combat-proven reliability under extreme operational conditions with consistent functioning and accurate detonation.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">23MM Point-Detonating (PD) Fuze</h3>
+                    <p className="text-gray-700">Instantaneous activation upon impact for high-rate-of-fire autocannons</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">30MM Proximity / Timed Fuze</h3>
+                    <p className="text-gray-700">Advanced airburst effects with sensor-based detection and programmable settings</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">40MM Programmable Airburst Fuze (PABF)</h3>
+                    <p className="text-gray-700">Next-generation fuze for infantry and naval defense with fire-control compatibility</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Safety & Arming Systems</h3>
+                    <p className="text-gray-700">Multi-layer safety devices with precision-machined components</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cartridge Cases */}
+      <section id="cartridge-cases" className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  </svg>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Cartridge Cases</h2>
+              </div>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                High-performance ammunition cartridge cases engineered for land, air, and naval combat platforms. Built from high-strength materials and optimized for extreme pressure environments.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Small Caliber (23mm-30mm)</h3>
+                    <p className="text-gray-700">High-rate-of-fire autocannons for air defense and UAV engagement</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Medium Caliber (40mm)</h3>
+                    <p className="text-gray-700">Grenade launchers with high-explosive and airburst capabilities</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Large Caliber (105mm-155mm)</h3>
+                    <p className="text-gray-700">Tank guns and artillery systems for armor penetration</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Combustible Cases (120mm-125mm)</h3>
+                    <p className="text-gray-700">FSAPDS and HESH rounds with minimal residue combustion</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Cartridge Case Specifications</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Max Operating Pressure: 450 MPa</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Max Muzzle Velocity: 1,800 m/s</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Operating Range: -40°C to +63°C</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Service Life: 15+ years</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">NATO STANAG & MIL-STD Compliant</span>
                 </div>
               </div>
             </div>
@@ -464,6 +644,92 @@ export default function AllServices() {
                 <p className="text-sm text-gray-600 italic">
                   Through rigorous inspection, testing, and traceability, we ensure every component is ready for the most demanding combat environments.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PCBs */}
+      <section id="pcbs" className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-blue-50 p-8 rounded-lg order-2 lg:order-1">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">PCB Specifications</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Multi-layer PCB Design (up to 16 layers)</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">High-Frequency Applications (up to 40 GHz)</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Operating Temperature: -55°C to +125°C</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">IPC Class 3 Manufacturing Standards</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">EMI/EMC Compliant Design</span>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                  </svg>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">PCBs</h2>
+              </div>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Advanced printed circuit board manufacturing for defense electronics, avionics systems, and mission-critical applications. Engineered for reliability in harsh environments with precision assembly and testing.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Defense Electronics PCBs</h3>
+                    <p className="text-gray-700">Ruggedized boards for radar, communication, and weapon systems</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Avionics Control Systems</h3>
+                    <p className="text-gray-700">Flight control, navigation, and instrumentation PCBs</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">High-Frequency RF Boards</h3>
+                    <p className="text-gray-700">Specialized substrates for microwave and millimeter-wave applications</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Power Electronics</h3>
+                    <p className="text-gray-700">Heavy copper PCBs for power management and motor control</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -56,6 +56,9 @@ export default function Hero() {
               <span className="px-5 py-2 bg-gradient-to-r from-blue-600/30 to-blue-500/20 border-2 border-blue-400/40 rounded-2xl text-blue-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-blue-500/40 hover:shadow-2xl hover:from-blue-600/50 hover:to-blue-500/30 hover:border-blue-400/60 hover:text-blue-200 transition-all duration-300 hover:scale-105 cursor-pointer">
                 Electronic Fuze Systems
               </span>
+              <Link href="/services/cartridge-cases" className="px-5 py-2 bg-gradient-to-r from-orange-600/30 to-orange-500/20 border-2 border-orange-400/40 rounded-2xl text-orange-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-orange-500/40 hover:shadow-2xl hover:from-orange-600/50 hover:to-orange-500/30 hover:border-orange-400/60 hover:text-orange-200 transition-all duration-300 hover:scale-105 cursor-pointer">
+                Cartridge Cases
+              </Link>
               <span className="px-5 py-2 bg-gradient-to-r from-cyan-600/30 to-cyan-500/20 border-2 border-cyan-400/40 rounded-2xl text-cyan-300 text-sm font-bold backdrop-blur-md shadow-lg hover:shadow-cyan-500/40 hover:shadow-2xl hover:from-cyan-600/50 hover:to-cyan-500/30 hover:border-cyan-400/60 hover:text-cyan-200 transition-all duration-300 hover:scale-105 cursor-pointer">
                 Artillery Components
               </span>
