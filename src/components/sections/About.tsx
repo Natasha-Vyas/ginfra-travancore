@@ -26,7 +26,7 @@ export default function About() {
                 Excellence
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Established with a vision to strengthen India's defense capabilities through cutting-edge precision manufacturing and innovative engineering solutions.
+                Established with a vision to strengthen India's defense capabilities through cutting-edge precision manufacturing of fuzes, cartridge cases, PCBs, and innovative engineering solutions.
               </p>
             </div>
 
@@ -55,7 +55,7 @@ export default function About() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Advanced Technology</h3>
                   <p className="text-gray-600">
-                    State-of-the-art CNC machining, forging capabilities, and electronic integration facilities ensure precision at every level.
+                    State-of-the-art CNC machining, forging capabilities, and electronic integration facilities for manufacturing precision fuzes, cartridge cases, and PCBs.
                   </p>
                 </div>
               </div>

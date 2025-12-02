@@ -7,7 +7,9 @@ import Image from 'next/image'
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [isProductsOpen, setIsProductsOpen] = useState(false)
   const servicesDropdownRef = useRef<HTMLDivElement>(null)
+  const productsDropdownRef = useRef<HTMLDivElement>(null)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -17,27 +19,35 @@ export default function Navbar() {
     setIsServicesOpen(!isServicesOpen)
   }
 
+  const toggleProducts = () => {
+    setIsProductsOpen(!isProductsOpen)
+  }
+
   const closeMenu = () => {
     setIsMenuOpen(false)
     setIsServicesOpen(false)
+    setIsProductsOpen(false)
   }
 
-  // Close services dropdown when clicking outside
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target as Node)) {
         setIsServicesOpen(false)
       }
+      if (productsDropdownRef.current && !productsDropdownRef.current.contains(event.target as Node)) {
+        setIsProductsOpen(false)
+      }
     }
 
-    if (isServicesOpen) {
+    if (isServicesOpen || isProductsOpen) {
       document.addEventListener('mousedown', handleClickOutside)
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [isServicesOpen])
+  }, [isServicesOpen, isProductsOpen])
 
   return (
     <nav className="bg-white shadow-lg relative z-50">
@@ -73,6 +83,52 @@ export default function Navbar() {
               >
                 About
               </Link>
+              
+              {/* Products Dropdown */}
+              <div className="relative" ref={productsDropdownRef}>
+                <button
+                  onClick={toggleProducts}
+                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors flex items-center"
+                >
+                  Products
+                  <svg
+                    className={`ml-1 h-4 w-4 transition-transform ${isProductsOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {isProductsOpen && (
+                  <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
+                    <div className="py-1">
+                      <Link
+                        href="/products/fuzes"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                        onClick={closeMenu}
+                      >
+                        Fuzes
+                      </Link>
+                      <Link
+                        href="/products/cartridge-cases"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                        onClick={closeMenu}
+                      >
+                        Cartridge Cases
+                      </Link>
+                      <Link
+                        href="/products/pcbs"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                        onClick={closeMenu}
+                      >
+                        PCBs
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
               
               {/* Services Dropdown */}
               <div className="relative" ref={servicesDropdownRef}>
@@ -179,6 +235,50 @@ export default function Navbar() {
               >
                 About
               </Link>
+              
+              {/* Mobile Products */}
+              <div>
+                <button
+                  onClick={toggleProducts}
+                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors w-full text-left flex items-center justify-between"
+                >
+                  Products
+                  <svg
+                    className={`h-4 w-4 transition-transform ${isProductsOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {isProductsOpen && (
+                  <div className="pl-6 space-y-1">
+                    <Link
+                      href="/products/fuzes"
+                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
+                      onClick={closeMenu}
+                    >
+                      Fuzes
+                    </Link>
+                    <Link
+                      href="/products/cartridge-cases"
+                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
+                      onClick={closeMenu}
+                    >
+                      Cartridge Cases
+                    </Link>
+                    <Link
+                      href="/products/pcbs"
+                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
+                      onClick={closeMenu}
+                    >
+                      PCBs
+                    </Link>
+                  </div>
+                )}
+              </div>
               
               {/* Mobile Services */}
               <div>

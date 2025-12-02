@@ -78,10 +78,13 @@ export default function About() {
                 GInfra Travancore Pvt. Ltd. was founded with a vision to revolutionize precision manufacturing in the defence, aerospace, and advanced robotics sectors. Our journey began with a commitment to delivering mission-critical components that meet the highest standards of quality and reliability.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                With state-of-the-art facilities and a team of highly skilled engineers, we have established ourselves as a trusted partner for organizations requiring precision-engineered solutions with tight tolerances and short lead times.
+                With state-of-the-art facilities and a team of highly skilled engineers, we have established ourselves as a trusted partner for organizations requiring precision-engineered solutions with tight tolerances and short lead times. Our comprehensive portfolio includes high-performance ammunition cartridge cases engineered for land, air, and naval combat platforms.
+              </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                We manufacture a full range of metallic and combustible cartridge cases (23mm to 155mm) built from high-strength materials and optimized for extreme pressure environments. Our cartridge cases deliver reliable ignition, stable chamber performance, and exceptional durability under the harshest operational conditions.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Our dedication to innovation, quality, and customer satisfaction has made us a preferred choice for complex manufacturing challenges across multiple industries.
+                Our dedication to innovation, quality, and customer satisfaction has made us a preferred choice for complex manufacturing challenges across multiple industries, with all products meeting MIL-STD and NATO-STANAG compliance standards.
               </p>
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 p-8 rounded-xl shadow-xl border border-blue-100">

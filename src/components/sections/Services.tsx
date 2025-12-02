@@ -10,7 +10,7 @@ export default function Services() {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Specialized manufacturing solutions for critical applications
+            Specialized manufacturing of fuzes, cartridge cases, PCBs, and precision components for defense and aerospace applications
           </p>
         </div>
         
@@ -25,7 +25,7 @@ export default function Services() {
                   </svg>
                 </div>
                 <div className="text-xl font-bold text-red-600 mb-2 group-hover:text-red-700 transition-colors duration-300">Defence Components</div>
-                <div className="text-gray-700 text-sm group-hover:text-gray-800 transition-colors duration-300">Ammunition components and military-grade systems</div>
+                <div className="text-gray-700 text-sm group-hover:text-gray-800 transition-colors duration-300">Fuzes, cartridge cases, PCBs, and military-grade systems</div>
               </div>
             </Link>
 
