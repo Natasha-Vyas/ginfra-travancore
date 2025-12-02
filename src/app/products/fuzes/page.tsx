@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Fuzes | GInfra Travancore - Advanced Fuze Systems',
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function FuzesPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden">
         {/* Animated background elements */}
@@ -33,11 +34,11 @@ export default function FuzesPage() {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight animate-fade-in-up delay-200">
-              <span className="text-blue-400 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Precision-Engineered</span>
-              <span className="text-xl md:text-3xl font-medium text-gray-300 ml-3">Fuze Systems</span>
+              <span className="text-blue-400 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Fuze</span>
+              <span className="text-xl md:text-3xl font-medium text-gray-300 ml-3">Systems</span>
             </h1>
             <p className="text-lg md:text-xl mb-6 text-gray-200 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-300">
-              Advanced fuze systems for <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">modern ammunition platforms</span> with maximum reliability and effectiveness.
+              Precision-engineered <span className="text-blue-400 font-semibold hover:text-cyan-400 transition-colors duration-300">fuze systems</span> for modern ammunition platforms with maximum reliability and effectiveness.
             </p>
           </div>
         </div>
@@ -56,257 +57,262 @@ export default function FuzesPage() {
         </div>
       </section>
 
-      {/* Overview Section */}
-      <section className="py-16">
+      {/* Main Content */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Fuze System Overview</h2>
-            <div className="prose prose-lg max-w-none text-gray-600">
-              <p className="text-lg leading-relaxed mb-6">
-                GInfra Travancore manufactures state-of-the-art fuze systems engineered for precision, reliability, and safety across diverse combat scenarios. Our fuzes are designed to meet the demanding requirements of modern warfare, providing consistent performance in extreme environmental conditions.
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl order-2 lg:order-1">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">Fuze Specifications</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">MIL-STD & NATO STANAG Compliant</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Operating Temperature: -40°C to +63°C</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Storage Life: 10-15+ years</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Arming Distance: 15-40m</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Multi-Mode Functionality</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Advanced Safety Mechanisms</span>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Fuze Systems</h2>
+              </div>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                State-of-the-art fuze systems engineered for precision, reliability, and safety across diverse combat scenarios. Our fuzes are designed to meet the demanding requirements of modern warfare, providing consistent performance in extreme environmental conditions.
               </p>
-              <p className="text-lg leading-relaxed">
-                From point-detonating fuzes for direct impact scenarios to sophisticated programmable airburst systems for area denial, our comprehensive portfolio ensures optimal munition effectiveness across land, air, and naval platforms.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Product Range */}
-      <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Product Range</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* 23MM Fuzes */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-lg">23</span>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Point-Detonating Fuzes</h3>
+                    <p className="text-gray-700">Direct impact fuzes for immediate target engagement</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">23MM Fuze Systems</h3>
-              </div>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Point-detonating fuzes for direct impact
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  High-rate-of-fire compatibility
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Anti-aircraft applications
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Temperature range: -40°C to +55°C
-                </li>
-              </ul>
-            </div>
-
-            {/* 30MM Fuzes */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-lg">30</span>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Proximity/Timed Fuzes</h3>
+                    <p className="text-gray-700">Multi-mode functionality with enhanced target discrimination</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">30MM Fuze Systems</h3>
-              </div>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Proximity/timed fuzes
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Multi-mode functionality
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Naval and ground platforms
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Enhanced target discrimination
-                </li>
-              </ul>
-            </div>
-
-            {/* 40MM Fuzes */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-lg">40</span>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Programmable Airburst</h3>
+                    <p className="text-gray-700">Variable timing control for area denial capabilities</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">40MM Fuze Systems</h3>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Electronic Systems</h3>
+                    <p className="text-gray-700">Advanced electronics for precision timing and control</p>
+                  </div>
+                </div>
               </div>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Programmable airburst fuzes
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Variable timing control
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Area denial capabilities
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Advanced safety mechanisms
-                </li>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Components & Capabilities */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              Components & Capabilities
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">Components & Capabilities</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Advanced fuze components and manufacturing capabilities for defense applications
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-3">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Fuze Types</h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Point-Detonating (PD) Fuzes</li>
+                <li>• Proximity/Timed Fuzes</li>
+                <li>• Programmable Airburst Fuzes</li>
+                <li>• Multi-Mode Fuzes</li>
+                <li>• Electronic Fuzes</li>
+                <li>• Mechanical Fuzes</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Safety Systems</h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Dual-Stage Safety Mechanisms</li>
+                <li>• Acceleration-Based Arming</li>
+                <li>• Fail-Safe Designs</li>
+                <li>• Environmental Protection</li>
+                <li>• Self-Destruct Features</li>
+                <li>• Misfire Prevention</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Quality Standards</h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li>• MIL-STD Compliance</li>
+                <li>• NATO STANAG Conformance</li>
+                <li>• Environmental Testing</li>
+                <li>• Vibration & Shock Tests</li>
+                <li>• Temperature Cycling</li>
+                <li>• EMC Testing</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Core Components */}
-      <section className="py-16">
+      {/* Testing & Validation */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Core Components</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Safety & Arming Mechanism</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Dual-stage safety systems</li>
-                <li>• Acceleration-based arming</li>
-                <li>• Fail-safe mechanisms</li>
-                <li>• Environmental protection</li>
-              </ul>
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              Testing & Validation
             </div>
-            
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Detonation Control</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Precision timing circuits</li>
-                <li>• Impact sensors</li>
-                <li>• Proximity detection</li>
-                <li>• Electronic programming</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Power Systems</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Thermal batteries</li>
-                <li>• Capacitor discharge systems</li>
-                <li>• Long-term storage capability</li>
-                <li>• Rapid activation</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Quality Testing</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Environmental stress testing</li>
-                <li>• Vibration and shock tests</li>
-                <li>• Temperature cycling</li>
-                <li>• Electromagnetic compatibility</li>
-              </ul>
-            </div>
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">Testing & Validation</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Comprehensive testing protocols to ensure fuze system reliability and safety
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Technical Specifications */}
-      <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Technical Specifications</h2>
-          
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-                  <tr>
-                    <th className="px-6 py-4 text-left">Specification</th>
-                    <th className="px-6 py-4 text-left">23MM</th>
-                    <th className="px-6 py-4 text-left">30MM</th>
-                    <th className="px-6 py-4 text-left">40MM</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 font-medium text-gray-900">Operating Temperature</td>
-                    <td className="px-6 py-4 text-gray-600">-40°C to +55°C</td>
-                    <td className="px-6 py-4 text-gray-600">-40°C to +63°C</td>
-                    <td className="px-6 py-4 text-gray-600">-40°C to +63°C</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-6 py-4 font-medium text-gray-900">Arming Distance</td>
-                    <td className="px-6 py-4 text-gray-600">15-25m</td>
-                    <td className="px-6 py-4 text-gray-600">20-30m</td>
-                    <td className="px-6 py-4 text-gray-600">25-40m</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 font-medium text-gray-900">Storage Life</td>
-                    <td className="px-6 py-4 text-gray-600">10+ years</td>
-                    <td className="px-6 py-4 text-gray-600">15+ years</td>
-                    <td className="px-6 py-4 text-gray-600">15+ years</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-6 py-4 font-medium text-gray-900">Compliance</td>
-                    <td className="px-6 py-4 text-gray-600">MIL-STD, NATO STANAG</td>
-                    <td className="px-6 py-4 text-gray-600">MIL-STD, NATO STANAG</td>
-                    <td className="px-6 py-4 text-gray-600">MIL-STD, NATO STANAG</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">Performance Testing</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Timing Accuracy</h4>
+                    <p className="text-gray-700">Precision timing validation for all fuze modes</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Arming Distance</h4>
+                    <p className="text-gray-700">Safety arming distance verification</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Sensitivity Testing</h4>
+                    <p className="text-gray-700">Impact and proximity sensitivity validation</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Function Testing</h4>
+                    <p className="text-gray-700">Complete function verification under operational conditions</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Why Choose Our Fuzes */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Why Choose GInfra Fuzes?</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-6">Environmental Testing</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Temperature Cycling</h4>
+                    <p className="text-gray-700">Extreme temperature performance validation</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Vibration Testing</h4>
+                    <p className="text-gray-700">High-G acceleration and vibration resistance</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Humidity Testing</h4>
+                    <p className="text-gray-700">Moisture resistance and corrosion protection</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">EMC Testing</h4>
+                    <p className="text-gray-700">Electromagnetic compatibility verification</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Proven Reliability</h3>
-              <p className="text-gray-600">Extensive testing and field validation ensure consistent performance</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Advanced Technology</h3>
-              <p className="text-gray-600">State-of-the-art electronics and precision manufacturing</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Enhanced Safety</h3>
-              <p className="text-gray-600">Multiple safety mechanisms and fail-safe designs</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Global Standards</h3>
-              <p className="text-gray-600">MIL-STD and NATO STANAG compliance</p>
             </div>
           </div>
         </div>
@@ -356,7 +362,7 @@ export default function FuzesPage() {
             
             {/* Enhanced CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-500 relative z-10">
-              <a
+              <Link
                 href="/contact"
                 className="relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-purple-600 hover:to-pink-600 text-white hover:text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transform hover:-translate-y-1 cursor-pointer"
               >
@@ -369,7 +375,7 @@ export default function FuzesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </span>
-              </a>
+              </Link>
               <a
                 href="mailto:info@ginfratravancore.com"
                 className="relative inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 hover:text-white hover:border-transparent font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transform hover:-translate-y-1 backdrop-blur-sm cursor-pointer"
@@ -403,6 +409,6 @@ export default function FuzesPage() {
           <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-cyan-400/40 rounded-full animate-float delay-700"></div>
         </div>
       </section>
-    </div>
+    </main>
   )
 }

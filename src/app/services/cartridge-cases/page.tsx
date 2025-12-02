@@ -156,6 +156,156 @@ export default function CartridgeCases() {
         </div>
       </section>
 
+      {/* Product Gallery */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              Product Gallery
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">Cartridge Case Products</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              High-performance ammunition cartridge cases for various calibers and combat applications
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/72950692-38eb-4123-a177-c7ae7d8722df_125mm_APFSDS_shell_of_T-72_Tank.jpg"
+                  alt="125mm APFSDS Shell for T-72 Tank"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">125mm APFSDS Shell</h3>
+                <p className="text-gray-600 mb-3">High-velocity armor-piercing fin-stabilized discarding sabot shell for T-72 tank applications</p>
+                <div className="flex items-center text-sm text-blue-600">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                  Tank Main Gun Systems
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6d9cf34b-b9c2-4226-8090-355c051b33fa_165-HEIT.webp"
+                  alt="165mm HEIT Cartridge"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">165mm HEIT Cartridge</h3>
+                <p className="text-gray-600 mb-3">High-explosive incendiary tracer cartridge for heavy artillery applications</p>
+                <div className="flex items-center text-sm text-cyan-600">
+                  <span className="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span>
+                  Heavy Artillery Systems
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/72180194-8ca1-4dbe-9d97-2606e85e4efd_Ammo_23mm_cannon%20%281%29.jpg"
+                  alt="23mm Cannon Ammunition"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">23mm Cannon Ammunition</h3>
+                <p className="text-gray-600 mb-3">High-performance 23mm cannon ammunition for air defense and ground attack systems</p>
+                <div className="flex items-center text-sm text-purple-600">
+                  <span className="w-2 h-2 bg-purple-600 rounded-full mr-2"></span>
+                  Air Defense Systems
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ead651b0-562b-45b1-a675-fda1bf0f37bc_e44fa198-b23f-4625-9032-51d0a78dfd1b.jpg"
+                  alt="Artillery Shell Components"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Artillery Shell Components</h3>
+                <p className="text-gray-600 mb-3">Precision-manufactured artillery shell components and cartridge case assemblies</p>
+                <div className="flex items-center text-sm text-green-600">
+                  <span className="w-2 h-2 bg-green-600 rounded-full mr-2"></span>
+                  Component Manufacturing
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/918f0621-5a5a-4114-a987-d6d287435c94_n5cXPeossV05XNZLyxYcdoFAV0m2HTObq1bSSrz8HjO0vZPbbjIwoMC222XKRBTnLuNixNXcvxnTIkuUcCGKRS6iuCDAxcNF8RuxoFBAMKpdJF9GcLASqqFGD_CbzRPE8fqWVcu35U_h8QZxDI4UbA.jpg"
+                  alt="Large Caliber Ammunition"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Large Caliber Ammunition</h3>
+                <p className="text-gray-600 mb-3">Heavy artillery ammunition systems for main battle tanks and field artillery</p>
+                <div className="flex items-center text-sm text-orange-600">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
+                  Main Battle Tank Systems
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0eecae55-3d85-4051-911e-a0fac0d1384a_NGAC.png"
+                  alt="NGAC Cartridge System"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">NGAC Cartridge System</h3>
+                <p className="text-gray-600 mb-3">Next-generation artillery cartridge system with advanced propellant technology</p>
+                <div className="flex items-center text-sm text-red-600">
+                  <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
+                  Advanced Artillery Systems
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group md:col-span-2 lg:col-span-1">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3b187acd-c9ea-4cce-b827-34c918cdb339_original.jpg"
+                  alt="Precision Cartridge Manufacturing"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Precision Manufacturing</h3>
+                <p className="text-gray-600 mb-3">State-of-the-art manufacturing processes for high-precision cartridge cases</p>
+                <div className="flex items-center text-sm text-indigo-600">
+                  <span className="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+                  CNC Manufacturing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Product Range Section */}
       <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

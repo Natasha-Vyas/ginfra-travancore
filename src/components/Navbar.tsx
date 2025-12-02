@@ -105,13 +105,6 @@ export default function Navbar() {
                   <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
                     <div className="py-1">
                       <Link
-                        href="/products/all"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                        onClick={closeMenu}
-                      >
-                        All Products
-                      </Link>
-                      <Link
                         href="/products/fuzes"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                         onClick={closeMenu}
@@ -262,13 +255,6 @@ export default function Navbar() {
                 
                 {isProductsOpen && (
                   <div className="pl-6 space-y-1">
-                    <Link
-                      href="/products/all"
-                      className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
-                      onClick={closeMenu}
-                    >
-                      All Products
-                    </Link>
                     <Link
                       href="/products/fuzes"
                       className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-sm transition-colors"
